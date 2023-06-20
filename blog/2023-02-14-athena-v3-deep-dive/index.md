@@ -29,7 +29,7 @@ select * from table where ...
 Instead with Iceberg hidden partitioning, we can simply declare that the table should be partitioned by hour on the `ts` column and we can simply write queries where we add a constraint on the timestamp column:
 
 ```sql
-select * from table where ts > current_timestamp - interval '10' days
+select * from table where ts > current_timestamp - interval '10' day
 ```
 
 <div align="center">
